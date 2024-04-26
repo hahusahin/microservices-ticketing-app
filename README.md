@@ -6,7 +6,7 @@
  * While locked, no other user can purchase the ticket. After 15 minutes, the ticket should 'unlock'
  * Ticket prices can be edited if they are not locked
  * Created a seperate service for Auth, Tickets, Orders, Payments and Expiration.
- * ![image](https://github.com/hahusahin/microservices-ticketing-app/assets/50502928/8afdfc83-bb7b-4919-a62d-bfacdbade232)
+ ![image](https://github.com/hahusahin/microservices-ticketing-app/assets/50502928/8afdfc83-bb7b-4919-a62d-bfacdbade232)
 
 ## Techstack
  * Next.js
