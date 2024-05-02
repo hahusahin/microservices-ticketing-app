@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: client
-          image: husahin/client
+          image: husahin/ticketing-client
 ---
 apiVersion: v1
 kind: Service

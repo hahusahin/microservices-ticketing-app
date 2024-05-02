@@ -7,7 +7,7 @@ build:
   local:
     push: false
   artifacts:
-    - image: husahin/auth
+    - image: husahin/ticketing-auth
       context: auth
       docker:
         dockerfile: Dockerfile
@@ -15,11 +15,19 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: husahin/client
+    - image: husahin/ticketing-client
       context: client
       docker:
         dockerfile: Dockerfile
       sync:
         manual:
           - src: '**/*.js'
+            dest: .
+    - image: husahin/ticketing-tickets
+      context: tickets
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: 'src/**/*.ts'
             dest: .
